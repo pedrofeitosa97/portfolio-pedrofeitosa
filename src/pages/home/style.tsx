@@ -2,6 +2,7 @@ import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
 import { css } from "@stitches/react";
+import { colors } from "@/styles/Global";
 
 import meIlustration from "@/public/static/img/background/me-ilustration.svg";
 import backgroundImg from "@/public/static/img/background/header-bg.svg";
@@ -143,4 +144,10 @@ export const ProjectAreaWrapperColumns = styled("div", {
   "@mobile": {
     flexDirection: "column",
   },
+});
+
+export const AboutMeSection = styled("div", {
+  width: "100%",
+  height: "auto",
+  color: "$brand1",
 });

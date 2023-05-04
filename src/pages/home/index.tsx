@@ -25,6 +25,7 @@ import {
   ProjectsAreaSocialMediaMessage,
   ProjectAreaWrapperColumns,
   ProjectsAreaContent,
+  AboutMeSection
 } from "./style";
 
 export const Home = (): JSX.Element => {
@@ -79,6 +80,14 @@ export const Home = (): JSX.Element => {
                 <FaGithub />
               </Button>
             </HeaderButtonsArea>
+            <AboutMeSection>
+              <Text as="h2" type="heading1" color="brand1">
+                  About me
+              </Text>
+              <Text as="p" color="grey2">
+                  Hello, my name is Pedro Henrique Feitosa. I am someone who is constantly seeking new knowledge and deepening my understanding of the technology market. Additionally, I am a fun-loving person who enjoys working in collaborative environments. I have skills in managing projects and the Scrum methodology. I am able to break down complex projects into manageable tasks, assign responsibilities, and ensure that all team members are on the same page. I believe that with hard work, determination, and a positive attitude, anything is possible.
+              </Text>
+            </AboutMeSection>
             <StackCards>
               {stackData.map((stack, index) => (
                 <Stack key={index} title={stack.title} icon={stack.img} />
